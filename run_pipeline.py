@@ -11,7 +11,7 @@ from seqtoolkit import (
     calculate_gc_windows,
 )
 from quality_control import quality_check
-from plot_gc import plot_gc_profile
+from plot_gc import plot_gc_profiles
 
 
 def main():
@@ -79,22 +79,22 @@ def main():
 
         # 3. GC plot
         if gc_rows:
-            plot_path = output_dir / "gc_profile.png"
-            plot_gc_profile(gc_path, plot_path)
+         plot_dir = output_dir / "gc_profiles"
+         plot_paths = plot_gc_profiles(gc_path, plot_dir)
         else:
-            print(
-                "No complete GC windows were available; "
-                "no GC plot was generated."
-            )
+          print(
+        "No complete GC windows were available; "
+        "no GC plots were generated."
+          )
 
         # 4. Summary
         print(f"\nProcessed {len(records)} FASTA record(s).")
         print(f"Quality report: {qc_path}")
         if gc_rows:
-            print(f"GC-window report: {gc_path}")
-            print(f"GC plot: {output_dir / 'gc_profile.png'}")
-
-        print("\nQuality-control summary:")
+         print(f"GC-window report: {gc_path}")
+         print(f"GC profiles: {output_dir / 'gc_profiles'}")
+         print(f"Plots generated: {len(plot_paths)}")
+         print("\nQuality-control summary:")
         for result in qc_results:
             print(
                 f'{result["status"]:7} | {result["header"]} | '
