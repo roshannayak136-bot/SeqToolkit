@@ -1,0 +1,9 @@
+header,start,end,GC_percent
+sequence_001 Human-like demonstration sequence,1,10,50.0
+sequence_001 Human-like demonstration sequence,6,15,40.0
+sequence_001 Human-like demonstration sequence,11,20,60.0
+sequence_001 Human-like demonstration sequence,16,25,60.0
+sequence_002 Synthetic GC-rich sequence,1,10,100.0
+sequence_002 Synthetic GC-rich sequence,6,15,70.0
+sequence_003 Synthetic ambiguous sequence,1,10,20.0
+sequence_003 Synthetic ambiguous sequence,6,15,0.0

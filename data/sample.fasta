@@ -1,0 +1,6 @@
+>sequence_001 Human-like demonstration sequence
+ATGCGCGATATCGATCGGCTAGCTAGCT
+>sequence_002 Synthetic GC-rich sequence
+GGGCCCGGGCCCATATGC
+>sequence_003 Synthetic ambiguous sequence
+ATGCRYSWKMBDHVN
