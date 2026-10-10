@@ -1,0 +1,4 @@
+header,length,ambiguous_count,ambiguous_percent,GC_percent_unambiguous,status,warnings
+sequence_001 Human-like demonstration sequence,28,0,0.0,53.57,PASS,None
+sequence_002 Synthetic GC-rich sequence,18,0,0.0,77.78,PASS,None
+sequence_003 Synthetic ambiguous sequence,15,11,73.33,50.0,WARNING,11 ambiguous base(s)
